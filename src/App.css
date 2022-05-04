@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div ul li {
+  display: flex-box;
+  text-decoration: none;
+  margin-left: 5px;
+  padding: 8px;
+  float: left;
+  list-style-type: none;
+}
+.topRated {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 65px;
+  left: -250px;
+}
+
+.home-page {
+  position: relative;
+  top: 80px;
+}
+
+.background img {
+  margin-top: 100px;
+  width: 1000px;
+  height: 500px;
 }
