@@ -57,6 +57,8 @@ export default function AppRouter() {
                 setBlockMoviesInfo={setBlockMoviesInfo}
                 likedMoviesInfo={likedMoviesInfo}
                 setLikedMoviesInfo={setLikedMoviesInfo}
+                likedMovie = {likedMovie}
+                setLikedMovie = {setLikedMovie}
                 />}></Route>
 
             </Routes>

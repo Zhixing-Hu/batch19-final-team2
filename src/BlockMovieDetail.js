@@ -16,6 +16,8 @@ export default function BlockMovieDetail(props) {
         likedMoviesInfo,
         blockMoviesInfo,
         setBlockMoviesInfo,
+        likedMovie,
+        setLikedMovie
     } = props
     function handleMoveToLike() {
       let temp = {
@@ -30,6 +32,7 @@ export default function BlockMovieDetail(props) {
       }
       // console.log(temp)
       setLikedMoviesInfo([...likedMoviesInfo, temp])
+      setLikedMovie([...likedMovie, id])
       setBlockMoviesInfo(blockMoviesInfo.filter(movie => movie.id !== id))
     }
     function handleMoveBackToMovieList() {

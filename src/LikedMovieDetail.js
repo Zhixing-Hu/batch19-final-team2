@@ -38,8 +38,23 @@ export default function LikedMovieDetail(props) {
   }
   function handleUnlike() {
     setLikedMoviesInfo(likedMoviesInfo.filter(movie => movie.id !== id))
-   
+    
     setLikedMovie(likedMovie.filter(movie=> movie !== id))
+    let movieJSON = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY+page))
+    if (movieJSON.filter(movie => movie.id === id).length === 0) {
+      let temp = {
+        id,
+        overview,
+        page,
+        poster_path,
+        release_date,
+        title,
+        vote_average,
+        vote_count
+      }
+      console.log(1)
+      localStorage.setItem(LOCAL_STORAGE_KEY+page, JSON.stringify([...movieJSON, temp]))
+    }
     
   }
     const IMG_URL = 'https://image.tmdb.org/t/p/w500'
@@ -48,7 +63,7 @@ export default function LikedMovieDetail(props) {
             <img src= {IMG_URL + poster_path} className='detail-pic' alt=''/>
             <div>
                 <button onClick={handleMoveLikeToBlock}>Block</button>
-                <button onClick={() => handleUnlike()}>Unlike</button>
+                <button onClick={handleUnlike}>Unlike</button>
             </div>
         </div>
   )

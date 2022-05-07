@@ -1,7 +1,7 @@
 import React from 'react'
 import BlockMovieDetail from './BlockMovieDetail'
 
-export default function BlockMovie({blockMoviesInfo, setBlockMoviesInfo, likedMoviesInfo ,setLikedMoviesInfo}) {
+export default function BlockMovie({blockMoviesInfo, setBlockMoviesInfo, likedMoviesInfo ,setLikedMoviesInfo, likedMovie,setLikedMovie}) {
     
   return (
     <div>
@@ -16,6 +16,8 @@ export default function BlockMovie({blockMoviesInfo, setBlockMoviesInfo, likedMo
               likedMoviesInfo = {likedMoviesInfo}
               setBlockMoviesInfo = {setBlockMoviesInfo}
               blockMoviesInfo = {blockMoviesInfo}
+              likedMovie = {likedMovie}
+              setLikedMovie = {setLikedMovie}
             />
           )
         })}
