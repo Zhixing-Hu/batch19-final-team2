@@ -15,6 +15,11 @@ body {
   margin: 0;
 }
 
+.homepage-banner {
+  height: auto;
+  width: 100vw;
+}
+
 .navigation-bar {
   height: 30px;
   display: flex;

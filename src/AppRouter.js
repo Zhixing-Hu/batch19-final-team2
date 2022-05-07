@@ -7,7 +7,8 @@ import LikedMovie from './LikedMovie'
 function Home() {
     return (
         <div>
-            Home Page
+            <h1>Home Page</h1>
+            <img className='homepage-banner' src='https://cdn.vectorstock.com/i/1000x1000/00/30/cool-web-banner-design-element-on-movie-night-vector-33030030.webp' />
         </div>
     )
 }
