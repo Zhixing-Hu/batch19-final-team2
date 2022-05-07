@@ -161,10 +161,10 @@ function App({blockMoviesInfo, setBlockMoviesInfo, likedMoviesInfo, setLikedMovi
   return (
     <div>
       <div className='sort-button'>
-        <button onClick={() => handleTitleSort()}>Title</button>
-        <button onClick={() => handleVoteCntSort()}>Vote Count</button>
-        <button onClick={() => handleVoteAvgSort()}>Vote Average</button>
-        <button onClick={() => handleDateSort()}>Release Date</button>
+        <button onClick={() => handleTitleSort()}>Sort By Title</button>
+        <button onClick={() => handleVoteCntSort()}>Sort By Vote Count</button>
+        <button onClick={() => handleVoteAvgSort()}>Sort By Vote Average</button>
+        <button onClick={() => handleDateSort()}>Sort By Release Date</button>
       </div>
       <div className='movies-list-button'>
         <button disabled={disablePrev} onClick={() => handlePageChange(-1)}>Prev</button>

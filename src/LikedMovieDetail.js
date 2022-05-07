@@ -52,7 +52,7 @@ export default function LikedMovieDetail(props) {
         vote_average,
         vote_count
       }
-      console.log(1)
+      
       localStorage.setItem(LOCAL_STORAGE_KEY+page, JSON.stringify([...movieJSON, temp]))
     }
     

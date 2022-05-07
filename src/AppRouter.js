@@ -22,17 +22,17 @@ export default function AppRouter() {
         
         <BrowserRouter>
         <ul className='navigation-bar'>
-                <li className='navigation-ele'>
+                <li>
                     <Link className='navigation-ele' to='/'>Home Page</Link>
                 </li>
-                <li className='navigation-ele'>
-                    <Link className='navigation-ele' to='/movie-list'>MovieList</Link>
+                <li>
+                    <Link className='navigation-ele' to='/movie-list'>Movie List</Link>
                 </li>
-                <li className='navigation-ele'>
-                    <Link className='navigation-ele' to='/like-list'>LikeList</Link>
+                <li>
+                    <Link className='navigation-ele' to='/like-list'>Like List</Link>
                 </li>
-                <li className='navigation-ele'>
-                    <Link className='navigation-ele' to='/block-list'>BlockList</Link>
+                <li>
+                    <Link className='navigation-ele' to='/block-list'>Block List</Link>
                 </li>
             </ul>
             <Routes>

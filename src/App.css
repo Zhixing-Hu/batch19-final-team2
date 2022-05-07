@@ -18,6 +18,7 @@ body {
 .homepage-banner {
   height: auto;
   width: 100vw;
+  object-fit: cover;
 }
 
 .navigation-bar {
@@ -28,17 +29,22 @@ body {
   justify-content: center;
 }
 .navigation-bar li {
-  height: 100%;
-  line-height: 100%;
   border: 1px solid black;
-  background-color: lightgray;
-  padding: 3px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
+.navigation-bar li:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
 .navigation-ele {
-  height: 100%;
   text-decoration: none;
   color: black;
-  padding: 5px;
+  padding: 15px;
   font-weight: 600;
 }
 
@@ -72,9 +78,38 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.movies-list-button button {
+  padding: 10px;
+  border: none;
+  background-color: rgb(119, 102, 102);
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.movies-list-button button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
 
 .sort-button {
+  display: flex;
+
+  padding: 5px;
+}
+.sort-button button {
   padding: 10px;
+  border: none;
+  background-color: rgb(204, 119, 119);
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.sort-button button:hover {
+  background-color: rgb(138, 71, 71);
+  cursor: pointer;
 }
 
 #pages {

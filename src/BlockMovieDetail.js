@@ -34,6 +34,11 @@ export default function BlockMovieDetail(props) {
       setLikedMoviesInfo([...likedMoviesInfo, temp])
       setLikedMovie([...likedMovie, id])
       setBlockMoviesInfo(blockMoviesInfo.filter(movie => movie.id !== id))
+      let movieJSON = localStorage.getItem(LOCAL_STORAGE_KEY+page)
+      if (movieJSON !== null) {
+        movieJSON = JSON.parse(movieJSON)
+      }
+      localStorage.setItem(LOCAL_STORAGE_KEY+page, JSON.stringify([...movieJSON, temp]))
     }
     function handleMoveBackToMovieList() {
       
