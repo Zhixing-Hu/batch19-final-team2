@@ -1,2 +1,0 @@
-// some js code
-// hello
