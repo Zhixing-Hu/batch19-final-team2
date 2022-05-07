@@ -50,7 +50,7 @@ body {
 
 .movie-details {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(1, auto);
   row-gap: 20px;
   column-gap: 10px;
   width: 100vw;
@@ -114,4 +114,27 @@ body {
 
 #pages {
   font-size: 16px;
+}
+
+@media screen and (min-width: 500px) {
+  .movie-details {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .movie-details {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .movie-details {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .movie-details {
+    grid-template-columns: repeat(5, auto);
+  }
 }
